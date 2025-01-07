@@ -9,14 +9,17 @@ let numberB = []
 
 const operate = (a, operator, b) => (operator(a,b));
 
+let disp = document.getElementById("display");
+let buttonVal = 0
 
 
-let displayDiv = document.getElementById('display');
-let element = document.querySelectorAll("button")
-let numberArr = []
-element.onclick = function() { 
-    debugger
-    let number = document.querySelectorAll("button"); 
-    numberArr.push(nodeList.textContent)
-  };
+document.querySelectorAll('button').forEach((button) => {
+    button.addEventListener('click', btnAction);
+  });
+  
+  function btnAction(event) {
+    const btn = event.target;
+    buttonVal = btn.innerText
+    disp.textContent = btn.innerText
+  }
   
