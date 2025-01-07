@@ -45,7 +45,7 @@ document.querySelectorAll('.operator').forEach((button) => {
     }
   }
 
-const equal = document.getElementById('.equal')
+const equal = document.querySelector('#equal')
 equal.addEventListener("click", () => {
     disp.textContent = operate(numberA, operator, numberB)
 })
