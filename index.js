@@ -9,3 +9,14 @@ let numberB = []
 
 const operate = (a, operator, b) => (operator(a,b));
 
+
+
+let displayDiv = document.getElementById('display');
+let element = document.querySelectorAll("button")
+let numberArr = []
+element.onclick = function() { 
+    debugger
+    let number = document.querySelectorAll("button"); 
+    numberArr.push(nodeList.textContent)
+  };
+  
