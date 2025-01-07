@@ -32,17 +32,21 @@ document.querySelectorAll('.operator').forEach((button) => {
     const btn = event.target;
     disp.textContent = btn.innerText
     if (btn.innerText === '+') {
-        operator = add
+        operator = "add"
+        alert(operator)
     }
     else if (btn.innerText === '-') {
-        operator = subtract
+        operator = "subtract"
+        alert(operator)
     }
     else if (btn.innerText === '*') {
-        operator = multiply
+        operator = "multiply"
+        alert(operator)
     }
     else if (btn.innerText === '/') {
-        operator = divide
-    }
+        operator = "divide"
+        alert(operator)
+    }  
   }
 
 const equal = document.querySelector('#equal')
