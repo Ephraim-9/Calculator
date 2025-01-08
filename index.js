@@ -18,12 +18,14 @@ document.querySelectorAll('.number').forEach((button) => {
   });
   
   function btnAction(event) {
+    event.preventDefault()
     const btn = event.target;
     for (i = 0; i < 2; i++) {
         if (i === 0) {
             numberA = btn.innerText
             alert(numberA)
             disp.textContent = btn.innerText
+            debugger
         }
         else if (i === 1) {
             numberB = btn.innerText
