@@ -2,10 +2,11 @@ let numberA = ''
 let operator = ''
 let numberB = ''
 
-const clear = () => {
+const clearF = () => {
     numberA = ''
     operator = ''
     numberB = ''
+    disp.textContent = ''
 }
 const operate = (a, b) => {
     if (operator === "+") {
@@ -56,4 +57,8 @@ const equal = document.querySelector('#equal')
 equal.addEventListener("click", () => {
     result = operate(Number(numberA), Number(numberB))
     disp.textContent = result
+})
+const clear = document.querySelector('#clear')
+clear.addEventListener("click", () => {
+    clearF()
 })
